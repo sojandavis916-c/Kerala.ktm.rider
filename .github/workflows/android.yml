@@ -1,4 +1,5 @@
 
+
 name: Build Kerala KTM Rider
 
 on:
@@ -24,9 +25,9 @@ jobs:
           node-version: '20'
 
       - uses: android-actions/setup-android@v3
-- uses: android-actions/setup-android@v3
-  with:
-    accept-android-sdk-licenses: true
+        with:
+          accept-android-sdk-licenses: true
+
       - name: Prepare project
         run: |
           unzip -q kerala_ktm_rider_android_starter.zip
